@@ -1,0 +1,51 @@
+{
+  "extends": ["react-app", "plugin:react/recommended", "airbnb", "airbnb/hooks", "plugin:jest/recommended", "plugin:prettier/recommended"],
+  "plugins": ["react-app", "react", "jest", "react-hooks", "prettier"],
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "jest": true
+  },
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  },
+  "rules": {
+    "import/no-cycle": "off",
+    "import/no-unresolved": "error",
+    "linebreak-style": "off",
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto"
+      }
+    ],
+    "no-shadow": "off",
+    "no-use-before-define": "off",
+    "max-len": [
+      "warn",
+      {
+        "code": 150
+      }
+    ],
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "import/prefer-default-export": "off",
+    "react/react-in-jsx-scope": 0,
+    "react/display-name": 0,
+    "react/prop-types": 0,
+    "no-console": [
+      1,
+      {
+        "allow": ["warn", "error"]
+      }
+    ]
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "paths": ["src"]
+      }
+    }
+  }
+}
