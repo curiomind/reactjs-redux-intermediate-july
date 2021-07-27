@@ -8,6 +8,7 @@ lerna-debug.log*
 
 Hooks/project-ts
 React-BootStrap/project-ts
+React-BootStrap/project
 
 # Diagnostic reports (https://nodejs.org/api/report.html)
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
